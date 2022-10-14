@@ -23,16 +23,17 @@ import Picture from '~/components/core/Picture.astro';
 					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
 						<div class="flex w-full sm:w-auto">
 							<a
-								class="btn text-white border border-rose-700 bg-rose-700 hover:bg-rose-500 hover:border-rose-500 sm:mb-0 w-full"
-								href="https://github.com/onwidget/astrowind"
-								target="_blank"
-								rel="noopener">
-								<Icon name="tabler:download" class="w-5 h-5 mr-1 -ml-1.5" />お問い合わせ</a>
-						</div>
-						<div class="flex w-full sm:w-auto">
-							<a
 								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full"
 								href="#features">機能</a>
+						</div>
+
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white border border-rose-700 bg-rose-700 hover:bg-rose-500 hover:border-rose-500 sm:mb-0 w-full"
+								href="/contact"
+								target="_blank"
+								rel="noopener">
+								お問い合わせ &nbsp&rarr;</a>
 						</div>
 					</div>
 				</div>
@@ -41,7 +42,7 @@ import Picture from '~/components/core/Picture.astro';
 				<div class="relative mb-8 m-auto max-w-3xl">
 					<Picture
 						src={import('~/assets/images/hero.jpg')}
-						class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
+						class="mx-auto rounded-md shadow-lg bg-gradient-to-t from-rose-700 w-full"
 						widths={[400, 768]}
 						sizes=" (max-width: 767px) 400px, 768px"
 						alt="Hero Image"
