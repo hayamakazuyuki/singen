@@ -15,9 +15,6 @@
 
 <br>
 
-<img src="./screenshot.png" alt="AstroWind Theme Screenshot">
-
-<br>
 
 <details>
 <summary>Table of Contents</summary>
