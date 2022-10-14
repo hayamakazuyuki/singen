@@ -1,11 +1,11 @@
 export const SITE = {
-	name: 'AstroWind',
+	name: 'singen',
 
-	origin: 'https://astrowind.vercel.app',
+	origin: 'https://singen.vercel.app',
 	basePathname: '/',
 
-	title: 'AstroWind — Your website with Astro + Tailwind CSS',
-	description: '🚀 AstroWind is a free and ready to start template to make your website using Astro and Tailwind CSS.',
+	title: 'シンゲン — 新しい資源物と廃棄物の管理',
+	description: 'シンゲンは、サーキュラーエコノミーの構築に向けた新しい資源物と廃棄物の管理サービスプラットフォームです。',
 
 	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
 	googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
