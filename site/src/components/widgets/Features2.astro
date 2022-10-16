@@ -1,21 +1,20 @@
 ---
-
 const items = [
 	[
 		{
-			icon: '',
+			dev: '',
 			title: '契約',
 			description:
 				'排出者様及びリサイクラー・処理業者様間で締結した資源物売買、廃棄物処理委託契約を管理します。',
 		},
 		{
-			icon: 'kk',
+			dev: '',
 			title: '許可証',
 			description:
 				'廃棄物処理業者様の一般廃棄物及び産業廃棄物処理業許可証の管理、データの閲覧。許可期限の管理も行えます。',
 		},
 		{
-			icon: 'sore',
+			dev: '',
 			title: '排出・回収量',
 			description:
 				'排出事業場別、資源物・廃棄物の品目別の回収・処理量を保存、データのダウンロードが出来ます。',
@@ -23,19 +22,19 @@ const items = [
 	],
 	[
 		{
-			icon: 'fuge',
+			dev: true,
 			title: '受発注管理',
 			description:
 				'排出者からリサイクラー・廃棄物処理業者様への資源物・廃棄物の処理依頼が行えます。',
 		},
 		{
-			icon: 'this',
+			dev: true,
 			title: 'JWNET EDI連携',
 			description:
 				'産業廃棄物の処理依頼データを電子マニフェストデータとしてJWNETに登録します。',
 		},
 		{
-			icon: 'last',
+			dev: true,
 			title: 'ダッシュボード',
 			description:
 				'資源物・廃棄物の処理量データをわかりやすいグラフなどダッシュボードで表示ます。',
@@ -56,20 +55,20 @@ const items = [
 			</h2>
 			<p class="max-w-3xl mx-auto sm:text-center text-xl text-gray-600 dark:text-slate-400">
 				シンゲンは排出事業者様とリサイクラー・処理業者様がそれぞれ許認可、契約関係そして排出・処理量の実績などを簡単に分かりやすく管理できるシステムです。
-				<span class="text-sm">※一部の機能は開発中です。また機能は常にユーザー様の声を反映し、追加・アップデートしています。</span>
+				<span class="text-sm">※グレーの機能は開発中です。また機能は常にユーザー様の声を反映し、追加・アップデートしています。</span>
 			</p>
 		</div>
 		<div class="grid mx-auto space-y-6 md:grid-cols-2 md:space-y-0">
 			{
 				items.map((subitems) => (
 					<div class="space-y-8 sm:px-8">
-						{subitems.map(({ icon, title, description }) => (
+						{subitems.map(({ dev, title, description }) => (
 							<div class="flex flex-row max-w-md">
 								<div class="mb-4 mr-4">
-									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500">
+									<div class="flex items-center justify-center w-12 h-12 rounded-full">
 										<svg class="w-12 h-12 p-0.5" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 											<g fill="none" fill-rule="evenodd">
-												<rect class="fill-current text-rose-600" width="64" height="64" rx="32" />
+												{ dev ? (<rect class="fill-current text-gray-500" width="64" height="64" rx="32" />) : (<rect class="fill-current text-rose-600" width="64" height="64" rx="32" />)}
 												<g stroke-linecap="square" stroke-width="2">
 													<path class="stroke-current text-white" d="M20.571 20.571h13.714v17.143H20.571z" />
 													<path
@@ -82,8 +81,7 @@ const items = [
 									</div>
 								</div>
 								<div>
-									<h3 class="mb-3 text-xl font-bold">{title}</h3>
-									<p>{description}</p>
+									{ dev ? (<h3 class="mb-3 text-xl font-bold text-gray-400">{title}</h3><p class="text-gray-400">{description}</p>) : (<h3 class="mb-3 text-xl font-bold text-gray-800 dark:text-gray-100">{title}</h3><p class="text-gray-800 dark:text-gray-100">{description}</p>)}
 								</div>
 							</div>
 						))}
