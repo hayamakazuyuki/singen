@@ -3,8 +3,7 @@ import { SITE } from '~/config.mjs';
 import { getCanonical, getHomePermalink } from '~/utils/permalinks';
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import ContactForm from '~/components/widgets/ContactForm.astro';
+import PrivacyPolicy from '~/components/widgets/PrivacyPolicy.astro';
 
 const meta = {
 	title: SITE.title,
@@ -14,5 +13,5 @@ const meta = {
 ---
 
 <Layout {meta}>
-	<ContactForm />
+	<PrivacyPolicy />
 </Layout>

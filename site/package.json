@@ -39,5 +39,10 @@
   },
   "engines": {
     "node": "^14.15.0 || >=16.0.0"
+  },
+  "dependencies": {
+    "@astrojs/alpinejs": "^0.1.2",
+    "@types/alpinejs": "^3.7.0",
+    "alpinejs": "^3.10.4"
   }
 }
