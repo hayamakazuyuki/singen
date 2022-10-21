@@ -1,7 +1,7 @@
 export const SITE = {
 	name: 'singen',
 
-	origin: 'https://singen.vercel.app',
+	origin: 'https://www.singen.io',
 	basePathname: '/',
 
 	title: 'シンゲン — 新しい資源物と廃棄物の管理',
